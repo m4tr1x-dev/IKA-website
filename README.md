@@ -2,54 +2,58 @@
 
 Oficjalne repozytorium kodu strony internetowej **Baru IKA** w Niechorzu — nadmorskiej miejscowości nad Bałtykiem (województwo zachodniopomorskie).
 
-> **Status:** w budowie. Repozytorium jest na etapie konfiguracji; kod strony zostanie dodany w kolejnych krokach.
+> **Status:** pierwsza wersja gotowa — strona statyczna z treścią i zdjęciami. Pozostaje konfiguracja GitHub Pages.
 
 ## O projekcie
 
-Bar IKA to _[krótki opis baru — do uzupełnienia: charakter lokalu, oferta, lokalizacja, sezon i godziny otwarcia]_.
+Bar IKA to rodzinna smażalnia ryb w Niechorzu — kilka metrów od plaży i tuż przy latarni morskiej. W ofercie świeże ryby prosto z patelni (dorsz bałtycki, sandacz, halibut, łosoś), domowe zupy i pierogi, regionalne oraz lane piwo, drinki i desery.
 
-Celem projektu jest lekka, szybka i responsywna strona (podejście **mobile-first** — większość gości trafia na nią z telefonu), zbudowana jako strona statyczna i hostowana przez **GitHub Pages**.
+- **Adres:** Starowiejska 3A, Niechorze
+- **Telefon:** 609 536 920
+- **Facebook:** [/ikaniechorze](https://www.facebook.com/ikaniechorze)
 
-## Stack (planowany)
+Strona jest lekka, szybka i responsywna (mobile-first), zbudowana jako pojedyncza strona statyczna i przeznaczona do hostingu na **GitHub Pages**.
 
-- **Frontend:** HTML5 + CSS3 + JavaScript, bez ciężkich zależności
-- **Hosting:** GitHub Pages
-- Opcjonalnie w przyszłości generator stron statycznych lub framework, jeśli zakres na to wskaże
+## Stack
 
-## Planowana struktura
+- **Frontend:** HTML5 + CSS (style inline) + Google Fonts — bez frameworków i bez kroku budowania
+- **Hosting:** GitHub Pages (treść statyczna)
+
+## Struktura
 
 ```
 IKA-website/
-├── index.html          # strona główna
+├── index.html              # cała strona (jedna podstrona)
 ├── assets/
-│   ├── css/            # style
-│   ├── js/             # skrypty
-│   └── img/            # grafiki, zdjęcia
+│   └── img/
+│       ├── hero.webp        # zdjęcie główne (hero)
+│       ├── galeria-1.webp   # taras / miejsca na zewnątrz
+│       ├── galeria-2.webp   # drink
+│       └── galeria-3.webp   # bar / wybór piwa
 ├── .gitignore
 └── README.md
 ```
 
 ## Uruchomienie lokalne
 
-Po dodaniu kodu strony wystarczy otworzyć `index.html` w przeglądarce albo uruchomić lokalny serwer:
-
 ```bash
-# Python 3
 python3 -m http.server 8000
-# potem otwórz http://localhost:8000
+# następnie otwórz http://localhost:8000
 ```
 
 ## Wdrożenie (GitHub Pages)
 
-Konfiguracja GitHub Pages zostanie dodana w następnym kroku. Docelowy adres strony:
+Konfiguracja Pages w toku. Docelowy adres:
 
 ```
 https://m4tr1x-dev.github.io/IKA-website/
 ```
 
+> Uwaga: GitHub Pages dla repozytorium **prywatnego** wymaga płatnego planu (Pro/Team). Na planie darmowym repozytorium trzeba ustawić jako publiczne.
+
 ## Prawa autorskie
 
-© Bar IKA, Niechorze. Wszelkie prawa zastrzeżone. Kod oraz materiały służą wyłącznie potrzebom Baru IKA.
+© Bar IKA, Niechorze. Wszelkie prawa zastrzeżone. Zdjęcia są własnością Baru IKA. Kod oraz materiały służą wyłącznie potrzebom Baru IKA.
 
 ---
 
