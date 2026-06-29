@@ -51,6 +51,10 @@ https://m4tr1x-dev.github.io/IKA-website/
 
 > Uwaga: GitHub Pages dla repozytorium **prywatnego** wymaga płatnego planu (Pro/Team). Na planie darmowym repozytorium trzeba ustawić jako publiczne.
 
+## Wykonanie
+
+Strona zaprojektowana i wykonana przez **CBprojekt sp. z o.o.** — developer **M4tr1x** (Mateusz Gumuła).
+
 ## Prawa autorskie
 
 © Bar IKA, Niechorze. Wszelkie prawa zastrzeżone. Zdjęcia są własnością Baru IKA. Kod oraz materiały służą wyłącznie potrzebom Baru IKA.
