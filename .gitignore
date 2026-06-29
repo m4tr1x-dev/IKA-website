@@ -1,0 +1,31 @@
+# System operacyjny
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Edytory / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logi
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Zależności (gdy pojawi się tooling Node)
+node_modules/
+.npm/
+
+# Wynik buildu (gdy dojdzie generator stron statycznych)
+dist/
+build/
+.cache/
+
+# Zmienne środowiskowe
+.env
+.env.local
+.env.*.local
