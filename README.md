@@ -11,7 +11,7 @@ Oficjalne repozytorium kodu strony internetowej **Baru IKA** w Niechorzu — rod
 Bar IKA to rodzinna smażalnia ryb dziesięć metrów od morza i 250 metrów od latarni w Niechorzu — świeże ryby prosto z patelni (dorsz, sandacz, halibut), domowe zupy i pierogi, regionalne piwo, drinki i churros. Prosto, świeżo i bez kombinowania.
 
 - **Adres:** ul. Starowiejska 3A, Niechorze
-- **Telefon:** [609 536 920](tel:+48609536920)
+- **Telefon:** [601 366 921](tel:+48601366921)
 - **Facebook:** [/ikaniechorze](https://www.facebook.com/ikaniechorze)
 
 Strona jest lekka, szybka i responsywna (mobile-first), zbudowana jako pojedyncza strona statyczna i hostowana na **GitHub Pages**.
