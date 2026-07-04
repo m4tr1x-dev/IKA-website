@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://m4tr1x-dev.github.io/IKA-website/sitemap.xml
