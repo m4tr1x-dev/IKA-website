@@ -64,19 +64,23 @@
 </head>
 <body>
 
-<a class="skip-link" href="#top">Przejdź do treści</a>
+<a class="skip-link" href="#top" data-i18n="skip">Przejdź do treści</a>
 
 <!-- NAV -->
 <header class="site-header">
-  <nav class="nav" aria-label="Nawigacja główna">
+  <nav class="nav" aria-label="Nawigacja główna" data-i18n-aria="nav.aria">
     <a href="#top" class="brand">
       <span class="brand__name">IKA</span>
       <span class="brand__sub">Niechorze</span>
     </a>
     <div class="nav__links">
-      <a href="#menu" class="nav__link">Menu</a>
-      <a href="#opinie" class="nav__link">Opinie</a>
-      <a href="#kontakt" class="nav__link">Kontakt</a>
+      <a href="#menu" class="nav__link" data-i18n="nav.menu">Menu</a>
+      <a href="#opinie" class="nav__link" data-i18n="nav.reviews">Opinie</a>
+      <a href="#kontakt" class="nav__link" data-i18n="nav.contact">Kontakt</a>
+      <div class="lang-switch" role="group" aria-label="Wybór języka" data-i18n-aria="lang.aria">
+        <button type="button" class="lang-switch__btn is-active" data-lang="pl" aria-pressed="true">PL</button>
+        <button type="button" class="lang-switch__btn" data-lang="de" aria-pressed="false">DE</button>
+      </div>
       <a href="tel:+48601366921" class="btn btn--phone">
         <span aria-hidden="true">☎</span> 601 366 921
       </a>
@@ -88,46 +92,46 @@
 
   <!-- HERO -->
   <section class="hero">
-    <img src="assets/img/hero.webp" alt="Bar IKA w Niechorzu — kontuar z menu rybnym i kolorowym muralem" class="hero__img" width="1600" height="1200" fetchpriority="high">
+    <img src="assets/img/hero.webp" alt="Bar IKA w Niechorzu — kontuar z menu rybnym i kolorowym muralem" data-i18n-alt="hero.alt" class="hero__img" width="1600" height="1200" fetchpriority="high">
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__content">
       <div class="float-up">
-        <span class="hero__badge"><span aria-hidden="true">★</span> 4,8 w Google · #1 bar w Niechorzu</span>
+        <span class="hero__badge"><span aria-hidden="true">★</span> <span data-i18n="hero.badge">4,8 w Google · #1 bar w Niechorzu</span></span>
       </div>
-      <h1 class="hero__title float-up-2">Świeże ryby<br>dziesięć metrów<br>od morza</h1>
-      <p class="hero__lead float-up-3">
+      <h1 class="hero__title float-up-2" data-i18n-html="hero.title">Świeże ryby<br>dziesięć metrów<br>od morza</h1>
+      <p class="hero__lead float-up-3" data-i18n="hero.lead">
         Rodzinna smażalnia tuż pod latarnią. Prosto z patelni: dorsz, sandacz i halibut, domowe pierogi i zimne, regionalne piwo.
       </p>
       <div class="hero__ctas float-up-4">
-        <a href="#menu" class="btn btn--amber">Zobacz menu →</a>
-        <a href="tel:+48601366921" class="btn btn--ghost">Zadzwoń i zarezerwuj</a>
+        <a href="#menu" class="btn btn--amber" data-i18n="hero.cta1">Zobacz menu →</a>
+        <a href="tel:+48601366921" class="btn btn--ghost" data-i18n="hero.cta2">Zadzwoń i zarezerwuj</a>
       </div>
     </div>
   </section>
 
   <!-- ATUTY -->
-  <section class="features" aria-label="Nasze atuty">
+  <section class="features" aria-label="Nasze atuty" data-i18n-aria="features.aria">
     <div class="wrap">
       <div class="features__grid">
         <div class="feature">
           <div class="feature__emoji" aria-hidden="true">🌊</div>
-          <h3 class="feature__title">Tuż przy plaży</h3>
-          <p class="feature__text">10 metrów od morza, 250 metrów od latarni morskiej w Niechorzu.</p>
+          <h3 class="feature__title" data-i18n="f1.title">Tuż przy plaży</h3>
+          <p class="feature__text" data-i18n="f1.text">10 metrów od morza, 250 metrów od latarni morskiej w Niechorzu.</p>
         </div>
         <div class="feature">
           <div class="feature__emoji" aria-hidden="true">🐟</div>
-          <h3 class="feature__title">Zawsze świeże ryby</h3>
-          <p class="feature__text">Smażone na bieżąco, domowe zupy i pierogi lepione na miejscu.</p>
+          <h3 class="feature__title" data-i18n="f2.title">Zawsze świeże ryby</h3>
+          <p class="feature__text" data-i18n="f2.text">Smażone na bieżąco, domowe zupy i pierogi lepione na miejscu.</p>
         </div>
         <div class="feature">
           <div class="feature__emoji" aria-hidden="true">🍺</div>
-          <h3 class="feature__title">Zimne piwo</h3>
-          <p class="feature__text">Duży wybór — piwa irlandzkie, czeskie i regionalne z beczki.</p>
+          <h3 class="feature__title" data-i18n="f3.title">Zimne piwo</h3>
+          <p class="feature__text" data-i18n="f3.text">Duży wybór — piwa irlandzkie, czeskie i regionalne z beczki.</p>
         </div>
         <div class="feature">
           <div class="feature__emoji" aria-hidden="true">💛</div>
-          <h3 class="feature__title">Rodzinnie i miło</h3>
-          <p class="feature__text">Sympatyczna obsługa i krótki czas oczekiwania, nawet w sezonie.</p>
+          <h3 class="feature__title" data-i18n="f4.title">Rodzinnie i miło</h3>
+          <p class="feature__text" data-i18n="f4.text">Sympatyczna obsługa i krótki czas oczekiwania, nawet w sezonie.</p>
         </div>
       </div>
     </div>
@@ -137,55 +141,55 @@
   <section id="menu" class="menu">
     <div class="wrap">
       <div class="section-head">
-        <span class="kicker">prosto z patelni</span>
-        <h2 class="section-title">Nasze menu</h2>
-        <p class="section-sub">Sezonowa karta — ceny orientacyjne. Pełną ofertę dnia znajdziesz na tablicy w barze.</p>
+        <span class="kicker" data-i18n="menu.kicker">prosto z patelni</span>
+        <h2 class="section-title" data-i18n="menu.title">Nasze menu</h2>
+        <p class="section-sub" data-i18n="menu.sub">Sezonowa karta — ceny orientacyjne. Pełną ofertę dnia znajdziesz na tablicy w barze.</p>
       </div>
 
       <div class="menu__grid">
 
         <div class="card">
-          <h3 class="card__title"><span aria-hidden="true">🐟</span> Ryby — zestawy</h3>
-          <p class="card__note">z frytkami i surówką · 530–550 g</p>
+          <h3 class="card__title"><span aria-hidden="true">🐟</span> <span data-i18n="menu.c1.title">Ryby — zestawy</span></h3>
+          <p class="card__note" data-i18n="menu.c1.note">z frytkami i surówką · 530–550 g</p>
           <ul class="price-list" role="list">
-            <li class="price-row"><span class="price-row__name">Dorsz</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">65 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Sandacz</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">65 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Halibut</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">65 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Miruna</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">55 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c1.i1">Dorsz</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">65 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c1.i2">Sandacz</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">65 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c1.i3">Halibut</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">65 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c1.i4">Miruna</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">55 zł</span></li>
           </ul>
         </div>
 
         <div class="card">
-          <h3 class="card__title"><span aria-hidden="true">🧀</span> Ryby zapiekane</h3>
-          <p class="card__note">w sosie, z frytkami i surówką</p>
+          <h3 class="card__title"><span aria-hidden="true">🧀</span> <span data-i18n="menu.c2.title">Ryby zapiekane</span></h3>
+          <p class="card__note" data-i18n="menu.c2.note">w sosie, z frytkami i surówką</p>
           <ul class="price-list" role="list">
-            <li class="price-row"><span class="price-row__name">Dorsz śmietanowo-porowy</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">75 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Dorsz z pomidorami i serem pleśniowym</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">75 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Dorsz ze szpinakiem i parmezanem</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">75 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Łosoś cytrynowo-maślany</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">80 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c2.i1">Dorsz śmietanowo-porowy</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">75 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c2.i2">Dorsz z pomidorami i serem pleśniowym</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">75 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c2.i3">Dorsz ze szpinakiem i parmezanem</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">75 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c2.i4">Łosoś cytrynowo-maślany</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">80 zł</span></li>
           </ul>
         </div>
 
         <div class="card">
-          <h3 class="card__title"><span aria-hidden="true">🥟</span> Pierogi</h3>
-          <p class="card__note">domowe, ręcznie robione · 7 szt.</p>
+          <h3 class="card__title"><span aria-hidden="true">🥟</span> <span data-i18n="menu.c3.title">Pierogi</span></h3>
+          <p class="card__note" data-i18n="menu.c3.note">domowe, ręcznie robione · 7 szt.</p>
           <ul class="price-list" role="list">
-            <li class="price-row"><span class="price-row__name">Ruskie</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">20 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Z mięsem</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">20 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Ze szpinakiem i mozzarellą</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">23 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Z serem i pieczarkami</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">23 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c3.i1">Ruskie</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">20 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c3.i2">Z mięsem</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">20 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c3.i3">Ze szpinakiem i mozzarellą</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">23 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c3.i4">Z serem i pieczarkami</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">23 zł</span></li>
           </ul>
         </div>
 
         <div class="card card--dark">
-          <h3 class="card__title"><span aria-hidden="true">🦐</span> Owoce morza &amp; fast food</h3>
-          <p class="card__note">krewetki, kalmary i klasyki na rękę</p>
+          <h3 class="card__title"><span aria-hidden="true">🦐</span> <span data-i18n="menu.c4.title">Owoce morza &amp; fast food</span></h3>
+          <p class="card__note" data-i18n="menu.c4.note">krewetki, kalmary i klasyki na rękę</p>
           <ul class="price-list" role="list">
-            <li class="price-row"><span class="price-row__name">Krewetki w cieście</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">45 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Kalmary w cieście</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">45 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Fish &amp; chips</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">40 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Stripsy z kurczaka</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">40 zł</span></li>
-            <li class="price-row"><span class="price-row__name">Nuggetsy</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">35 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c4.i1">Krewetki w cieście</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">45 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c4.i2">Kalmary w cieście</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">45 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c4.i3">Fish &amp; chips</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">40 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c4.i4">Stripsy z kurczaka</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">40 zł</span></li>
+            <li class="price-row"><span class="price-row__name" data-i18n="menu.c4.i5">Nuggetsy</span><span class="price-row__dots" aria-hidden="true"></span><span class="price-row__value">35 zł</span></li>
           </ul>
         </div>
 
@@ -193,9 +197,9 @@
 
       <!-- Galeria -->
       <div class="gallery">
-        <img src="assets/img/galeria-1.webp" alt="Taras Baru IKA z parasolami i miejscami na zewnątrz" loading="lazy" width="900" height="900" class="gallery__img">
-        <img src="assets/img/galeria-2.webp" alt="Mrożony drink owocowy podany w Barze IKA" loading="lazy" width="900" height="900" class="gallery__img">
-        <img src="assets/img/galeria-3.webp" alt="Bar z wyborem regionalnego i lanego piwa" loading="lazy" width="900" height="900" class="gallery__img">
+        <img src="assets/img/galeria-1.webp" alt="Taras Baru IKA z parasolami i miejscami na zewnątrz" data-i18n-alt="g1.alt" loading="lazy" width="900" height="900" class="gallery__img">
+        <img src="assets/img/galeria-2.webp" alt="Mrożony drink owocowy podany w Barze IKA" data-i18n-alt="g2.alt" loading="lazy" width="900" height="900" class="gallery__img">
+        <img src="assets/img/galeria-3.webp" alt="Bar z wyborem regionalnego i lanego piwa" data-i18n-alt="g3.alt" loading="lazy" width="900" height="900" class="gallery__img">
       </div>
     </div>
   </section>
@@ -205,43 +209,43 @@
     <div class="reviews__wave" aria-hidden="true">🌊</div>
     <div class="reviews__inner">
       <div class="reviews__head">
-        <span class="kicker kicker--amber">co mówią goście</span>
-        <h2 class="section-title">Po prostu bomba!</h2>
+        <span class="kicker kicker--amber" data-i18n="rev.kicker">co mówią goście</span>
+        <h2 class="section-title" data-i18n="rev.title">Po prostu bomba!</h2>
         <div class="rating-pill">
-          <span class="rating-pill__stars" role="img" aria-label="Ocena 4,8 na 5 gwiazdek">★★★★★</span>
+          <span class="rating-pill__stars" role="img" aria-label="Ocena 4,8 na 5 gwiazdek" data-i18n-aria="rev.rating">★★★★★</span>
           <strong class="rating-pill__value">4,8</strong>
-          <span class="rating-pill__count">· prawie 300 opinii w Google</span>
+          <span class="rating-pill__count" data-i18n="rev.count">· prawie 300 opinii w Google</span>
         </div>
       </div>
       <div class="reviews__grid">
         <figure class="review">
-          <div class="review__stars" role="img" aria-label="5 gwiazdek">★★★★★</div>
+          <div class="review__stars" role="img" aria-label="5 gwiazdek" data-i18n-aria="rev.stars5">★★★★★</div>
           <blockquote>
-            <p>„Wspaniała zupa rybna, bez porównania do innych w Niechorzu! Świetny dorsz z naprawdę smacznymi frytkami. Po prostu bomba!"</p>
+            <p data-i18n-html="rev1.q">„Wspaniała zupa rybna, bez porównania do innych w Niechorzu! Świetny dorsz z naprawdę smacznymi frytkami. Po prostu bomba!"</p>
           </blockquote>
           <figcaption>
             <div class="review__author">Marta K.</div>
-            <div class="review__meta">gość z plaży</div>
+            <div class="review__meta" data-i18n="rev1.meta">gość z plaży</div>
           </figcaption>
         </figure>
         <figure class="review">
-          <div class="review__stars" role="img" aria-label="5 gwiazdek">★★★★★</div>
+          <div class="review__stars" role="img" aria-label="5 gwiazdek" data-i18n-aria="rev.stars5">★★★★★</div>
           <blockquote>
-            <p>„Znakomite pierogi, szczególnie te z serem i grzybami — wszystko na bogato. Bardzo miła obsługa i krótki czas oczekiwania."</p>
+            <p data-i18n-html="rev2.q">„Znakomite pierogi, szczególnie te z serem i grzybami — wszystko na bogato. Bardzo miła obsługa i krótki czas oczekiwania."</p>
           </blockquote>
           <figcaption>
             <div class="review__author">Tomasz W.</div>
-            <div class="review__meta">wraca co roku</div>
+            <div class="review__meta" data-i18n="rev2.meta">wraca co roku</div>
           </figcaption>
         </figure>
         <figure class="review">
-          <div class="review__stars" role="img" aria-label="5 gwiazdek">★★★★★</div>
+          <div class="review__stars" role="img" aria-label="5 gwiazdek" data-i18n-aria="rev.stars5">★★★★★</div>
           <blockquote>
-            <p>„Duży wybór piw, świeże ryby i ceny, które nie drenują kieszeni. Kuchnia naprawdę godna polecenia."</p>
+            <p data-i18n-html="rev3.q">„Duży wybór piw, świeże ryby i ceny, które nie drenują kieszeni. Kuchnia naprawdę godna polecenia."</p>
           </blockquote>
           <figcaption>
             <div class="review__author">Aneta i Paweł</div>
-            <div class="review__meta">urlop w Niechorzu</div>
+            <div class="review__meta" data-i18n="rev3.meta">urlop w Niechorzu</div>
           </figcaption>
         </figure>
       </div>
@@ -252,45 +256,45 @@
   <section id="kontakt" class="contact">
     <div class="wrap contact__grid">
       <div>
-        <span class="kicker">wpadnij do nas</span>
-        <h2 class="section-title">Godziny i dojazd</h2>
+        <span class="kicker" data-i18n="con.kicker">wpadnij do nas</span>
+        <h2 class="section-title" data-i18n="con.title">Godziny i dojazd</h2>
         <address>
           <div class="info-row">
             <span class="info-row__emoji" aria-hidden="true">📍</span>
             <div>
               <div class="info-row__title">ul. Starowiejska 3A</div>
-              <div class="info-row__sub">72-350 Niechorze · 10 m od plaży, 250 m od latarni</div>
+              <div class="info-row__sub" data-i18n="con.addr">72-350 Niechorze · 10 m od plaży, 250 m od latarni</div>
             </div>
           </div>
           <div class="info-row">
             <span class="info-row__emoji" aria-hidden="true">🕒</span>
             <div>
-              <div class="info-row__title">Codziennie 10:00 – 22:00</div>
-              <div class="info-row__sub">w sezonie letnim · poza sezonem zadzwoń</div>
+              <div class="info-row__title" data-i18n="con.hours">Codziennie 10:00 – 22:00</div>
+              <div class="info-row__sub" data-i18n="con.hours.sub">w sezonie letnim · poza sezonem zadzwoń</div>
             </div>
           </div>
           <div class="info-row">
             <span class="info-row__emoji" aria-hidden="true">☎</span>
             <div>
               <div class="info-row__title"><a href="tel:+48601366921">601 366 921</a></div>
-              <div class="info-row__sub">rezerwacje i pokoje gościnne</div>
+              <div class="info-row__sub" data-i18n="con.phone.sub">rezerwacje i pokoje gościnne</div>
             </div>
           </div>
         </address>
         <div class="contact__ctas">
-          <a href="tel:+48601366921" class="btn btn--teal">Zadzwoń teraz</a>
+          <a href="tel:+48601366921" class="btn btn--teal" data-i18n="con.cta">Zadzwoń teraz</a>
           <a href="https://www.facebook.com/ikaniechorze" target="_blank" rel="noopener noreferrer" class="btn btn--outline">Facebook</a>
         </div>
       </div>
       <div class="map-card">
         <div class="map-placeholder" id="map-box">
           <span class="map-placeholder__emoji" aria-hidden="true">📍</span>
-          <p class="map-placeholder__text">
+          <p class="map-placeholder__text" data-i18n-html="map.consent">
             Mapa Google ładuje się dopiero po Twojej zgodzie — kliknięcie przycisku połączy Cię z serwerami Google (zob. <a class="map-placeholder__link" href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">politykę prywatności Google</a>).
           </p>
-          <button type="button" class="btn btn--teal" id="map-load">Załaduj mapę Google</button>
+          <button type="button" class="btn btn--teal" id="map-load" data-i18n="map.load">Załaduj mapę Google</button>
           <p class="map-placeholder__text">
-            <a class="map-placeholder__link" href="https://www.google.com/maps?q=Bar%20Ika%20Starowiejska%203A%20Niechorze" target="_blank" rel="noopener noreferrer">albo otwórz mapę w nowej karcie →</a>
+            <a class="map-placeholder__link" href="https://www.google.com/maps?q=Bar%20Ika%20Starowiejska%203A%20Niechorze" target="_blank" rel="noopener noreferrer" data-i18n="map.open">albo otwórz mapę w nowej karcie →</a>
           </p>
         </div>
       </div>
@@ -307,15 +311,16 @@
         <span class="site-footer__brand-name">IKA</span>
         <span class="site-footer__brand-sub">Niechorze</span>
       </div>
-      <p class="site-footer__info">Bar &amp; smażalnia ryb · ul. Starowiejska 3A, Niechorze · © <span id="rok">2026</span></p>
+      <p class="site-footer__info"><span data-i18n="footer.info">Bar &amp; smażalnia ryb · ul. Starowiejska 3A, Niechorze</span> · © <span id="rok">2026</span></p>
     </div>
     <div class="site-footer__credits">
-      <p>Strona zaprojektowana przez <strong>CBprojekt sp. z o.o.</strong> · developer <strong>M4tr1x</strong> (Mateusz Gumuła)</p>
+      <p data-i18n-html="footer.credits">Strona zaprojektowana przez <strong>CBprojekt sp. z o.o.</strong> · developer <strong>M4tr1x</strong> (Mateusz Gumuła)</p>
     </div>
   </div>
 </footer>
 
 <script src="assets/js/map.js" defer></script>
+<script src="assets/js/i18n.js" defer></script>
 
 </body>
 </html>

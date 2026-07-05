@@ -655,3 +655,41 @@ button:focus-visible {
   line-height: 1.5;
 }
 .site-footer__credits strong { color: var(--navy); font-weight: 600; }
+
+/* --- Przełącznik języka (PL/DE) ------------------------------------------ */
+
+.lang-switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid rgba(14, 63, 76, 0.18);
+  border-radius: 999px;
+  background: #fff;
+}
+
+.lang-switch__btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 5px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-switch__btn.is-active {
+  background: var(--teal);
+  color: #fff;
+}
+
+.lang-switch__btn:not(.is-active):hover {
+  color: var(--navy);
+}
+
+.lang-switch__btn:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}

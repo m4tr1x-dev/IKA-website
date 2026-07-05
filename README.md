@@ -102,6 +102,10 @@ Wszystkie zdjęcia to autorskie fotografie Baru IKA — zoptymalizowane do forma
 - bursztyn (akcent) `#EFA43C`
 - krem `#FBF4E7`
 
+## Wersje językowe (PL / DE)
+
+Strona ma wbudowany przełącznik języka **PL | DE** (nawigacja). Polski jest językiem domyślnym i źródłem treści w HTML — strona działa w pełni także bez JavaScriptu (wtedy po polsku). Tłumaczenie niemieckie znajduje się w `assets/js/i18n.js`; wybór języka zapisywany jest w `localStorage`, a skrypt podmienia również `<html lang>`, `<title>`, meta description oraz teksty alternatywne i etykiety ARIA.
+
 ## Wykonanie
 
 Strona zaprojektowana i wykonana przez **CBprojekt sp. z o.o.** — developer **M4tr1x** (Mateusz Gumuła).

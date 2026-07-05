@@ -8,7 +8,7 @@
   if (btn && box) {
     btn.addEventListener('click', function () {
       var iframe = document.createElement('iframe');
-      iframe.title = 'Mapa — Bar IKA Niechorze';
+      iframe.title = document.documentElement.lang === 'de' ? 'Karte — Bar IKA Niechorze' : 'Mapa — Bar IKA Niechorze';
       iframe.src = 'https://www.google.com/maps?q=Bar%20Ika%20Starowiejska%203A%20Niechorze&output=embed';
       iframe.loading = 'lazy';
       iframe.className = 'map-iframe';
