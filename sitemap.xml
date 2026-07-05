@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://m4tr1x-dev.github.io/IKA-website/</loc>
-    <lastmod>2026-07-04</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-07-05</lastmod>
+    <image:image><image:loc>https://m4tr1x-dev.github.io/IKA-website/assets/img/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://m4tr1x-dev.github.io/IKA-website/assets/img/galeria-1.webp</image:loc></image:image>
+    <image:image><image:loc>https://m4tr1x-dev.github.io/IKA-website/assets/img/galeria-2.webp</image:loc></image:image>
+    <image:image><image:loc>https://m4tr1x-dev.github.io/IKA-website/assets/img/galeria-3.webp</image:loc></image:image>
   </url>
 </urlset>

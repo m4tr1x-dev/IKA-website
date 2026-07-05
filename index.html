@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'none'">
 
-<title>Bar IKA Niechorze — smażalnia ryb 10 m od plaży | świeże ryby, pierogi, piwo</title>
-<meta name="description" content="Bar IKA w Niechorzu — rodzinna smażalnia ryb tuż przy plaży i latarni morskiej. Świeży dorsz, sandacz i halibut prosto z patelni, domowe pierogi, owoce morza i zimne regionalne piwo. Codziennie 10:00–22:00, ul. Starowiejska 3A.">
+<title>Smażalnia ryb Niechorze — Bar IKA | świeże ryby 10 m od plaży</title>
+<meta name="description" content="Gdzie zjeść w Niechorzu? Bar IKA — rodzinna smażalnia ryb 10 m od plaży i 250 m od latarni. Świeży dorsz, sandacz i halibut, domowe pierogi, zimne piwo. Codziennie 10:00–22:00, ul. Starowiejska 3A.">
 <link rel="canonical" href="https://m4tr1x-dev.github.io/IKA-website/">
 <meta name="theme-color" content="#FBF4E7">
 
@@ -36,6 +36,7 @@
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
+  "@id": "https://m4tr1x-dev.github.io/IKA-website/#restauracja",
   "name": "Bar IKA",
   "alternateName": "Bar IKA Niechorze",
   "description": "Rodzinna smażalnia ryb tuż przy plaży i latarni morskiej w Niechorzu — świeże ryby prosto z patelni, domowe pierogi, owoce morza i regionalne piwo.",
@@ -50,15 +51,84 @@
     "streetAddress": "ul. Starowiejska 3A",
     "addressLocality": "Niechorze",
     "postalCode": "72-350",
+    "addressRegion": "Zachodniopomorskie",
     "addressCountry": "PL"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 54.0958536,
+    "longitude": 15.0710002
+  },
+  "hasMap": "https://www.google.com/maps?q=Bar%20Ika%20Starowiejska%203A%20Niechorze",
   "openingHoursSpecification": {
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
     "opens": "10:00",
     "closes": "22:00"
   },
+  "menu": "https://m4tr1x-dev.github.io/IKA-website/#menu",
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Karta Baru IKA",
+    "inLanguage": "pl",
+    "hasMenuSection": [
+      {
+        "@type": "MenuSection",
+        "name": "Ryby — zestawy (z frytkami i surówką, 530–550 g)",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Dorsz — zestaw", "offers": {"@type": "Offer", "price": "65", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Sandacz — zestaw", "offers": {"@type": "Offer", "price": "65", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Halibut — zestaw", "offers": {"@type": "Offer", "price": "65", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Miruna — zestaw", "offers": {"@type": "Offer", "price": "55", "priceCurrency": "PLN"}}
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Ryby zapiekane w sosie (z frytkami i surówką)",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Dorsz śmietanowo-porowy", "offers": {"@type": "Offer", "price": "75", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Dorsz z pomidorami i serem pleśniowym", "offers": {"@type": "Offer", "price": "75", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Dorsz ze szpinakiem i parmezanem", "offers": {"@type": "Offer", "price": "75", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Łosoś cytrynowo-maślany", "offers": {"@type": "Offer", "price": "80", "priceCurrency": "PLN"}}
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Pierogi domowe (7 szt.)",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Pierogi ruskie", "offers": {"@type": "Offer", "price": "20", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Pierogi z mięsem", "offers": {"@type": "Offer", "price": "20", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Pierogi ze szpinakiem i mozzarellą", "offers": {"@type": "Offer", "price": "23", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Pierogi z serem i pieczarkami", "offers": {"@type": "Offer", "price": "23", "priceCurrency": "PLN"}}
+        ]
+      },
+      {
+        "@type": "MenuSection",
+        "name": "Owoce morza i fast food",
+        "hasMenuItem": [
+          {"@type": "MenuItem", "name": "Krewetki w cieście", "offers": {"@type": "Offer", "price": "45", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Kalmary w cieście", "offers": {"@type": "Offer", "price": "45", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Fish & chips", "offers": {"@type": "Offer", "price": "40", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Stripsy z kurczaka", "offers": {"@type": "Offer", "price": "40", "priceCurrency": "PLN"}},
+          {"@type": "MenuItem", "name": "Nuggetsy", "offers": {"@type": "Offer", "price": "35", "priceCurrency": "PLN"}}
+        ]
+      }
+    ]
+  },
   "sameAs": ["https://www.facebook.com/ikaniechorze"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Czy trzeba rezerwować stolik?", "acceptedAnswer": {"@type": "Answer", "text": "Nie — działamy jak klasyczna nadmorska smażalnia: zamawiasz przy okienku i siadasz przy stoliku na tarasie. Przy większych grupach lub poza sezonem warto wcześniej zadzwonić: 601 366 921."}},
+    {"@type": "Question", "name": "Do której jesteście otwarci?", "acceptedAnswer": {"@type": "Answer", "text": "W sezonie letnim codziennie od 10:00 do 22:00. Poza sezonem godziny mogą się różnić — najlepiej zadzwoń przed przyjściem."}},
+    {"@type": "Question", "name": "Jakie ryby macie w karcie?", "acceptedAnswer": {"@type": "Answer", "text": "Zawsze świeże: dorsz, sandacz, halibut i miruna — smażone na bieżąco, w zestawach z frytkami i surówką. Do tego ryby zapiekane w sosach, owoce morza i domowe pierogi. Pełna karta dnia wisi na tablicy przy barze."}},
+    {"@type": "Question", "name": "Czy jest coś dla dzieci?", "acceptedAnswer": {"@type": "Answer", "text": "Tak — nuggetsy, stripsy z kurczaka i frytki znikają u najmłodszych najszybciej. Na miejscu jest też krzesełko do karmienia."}},
+    {"@type": "Question", "name": "Jak was znaleźć?", "acceptedAnswer": {"@type": "Answer", "text": "Ul. Starowiejska 3A w Niechorzu — 10 metrów od wejścia na plażę i około 250 metrów od latarni morskiej. Szukaj zielonych parasoli i kolorowego szyldu IKA."}}
+  ]
 }
 </script>
 </head>
@@ -76,6 +146,7 @@
     <div class="nav__links">
       <a href="#menu" class="nav__link" data-i18n="nav.menu">Menu</a>
       <a href="#opinie" class="nav__link" data-i18n="nav.reviews">Opinie</a>
+      <a href="#faq" class="nav__link" data-i18n="nav.faq">FAQ</a>
       <a href="#kontakt" class="nav__link" data-i18n="nav.contact">Kontakt</a>
       <div class="lang-switch" role="group" aria-label="Wybór języka" data-i18n-aria="lang.aria">
         <button type="button" class="lang-switch__btn is-active" data-lang="pl" aria-pressed="true">PL</button>
@@ -96,7 +167,7 @@
     <div class="hero__overlay" aria-hidden="true"></div>
     <div class="hero__content">
       <div class="float-up">
-        <span class="hero__badge"><span aria-hidden="true">★</span> <span data-i18n="hero.badge">4,8 w Google · #1 bar w Niechorzu</span></span>
+        <span class="hero__badge"><span aria-hidden="true">★</span> <span data-i18n="hero.badge">4,6 w Google · #1 bar w Niechorzu</span></span>
       </div>
       <h1 class="hero__title float-up-2" data-i18n-html="hero.title">Świeże ryby<br>dziesięć metrów<br>od morza</h1>
       <p class="hero__lead float-up-3" data-i18n="hero.lead">
@@ -204,6 +275,21 @@
     </div>
   </section>
 
+  <!-- O NAS -->
+  <section id="o-nas" class="about">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker" data-i18n="about.kicker">poznaj nas bliżej</span>
+        <h2 class="section-title" data-i18n="about.title">Smażalnia ryb w sercu Niechorza</h2>
+      </div>
+      <div class="about__cols">
+        <p class="about__text" data-i18n="about.p1">Bar IKA to rodzinna smażalnia ryb w Niechorzu — dosłownie dziesięć metrów od wejścia na plażę i około 250 metrów od słynnej latarni morskiej. Od lat karmimy plażowiczów świeżą rybą smażoną na bieżąco: dorszem, sandaczem, halibutem i miruną, a do tego domowymi zupami i pierogami lepionymi na miejscu.</p>
+        <p class="about__text" data-i18n="about.p2">Wpadniesz do nas prosto z plaży — bez rezerwacji i bez czekania: większość dań wydajemy w kilkanaście minut nawet w szczycie sezonu. Dla dzieci mamy krzesełko do karmienia i szybkie klasyki, a dla dorosłych zimne regionalne piwo z beczki.</p>
+        <p class="about__text" data-i18n="about.p3">Urlop w Rewalu, Pogorzelicy albo Trzęsaczu? Do IKI dojedziesz w kilka minut, a spacer nadmorską promenadą z latarnią w tle to najlepszy deser.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- OPINIE -->
   <section id="opinie" class="reviews">
     <div class="reviews__wave" aria-hidden="true">🌊</div>
@@ -212,9 +298,9 @@
         <span class="kicker kicker--amber" data-i18n="rev.kicker">co mówią goście</span>
         <h2 class="section-title" data-i18n="rev.title">Po prostu bomba!</h2>
         <div class="rating-pill">
-          <span class="rating-pill__stars" role="img" aria-label="Ocena 4,8 na 5 gwiazdek" data-i18n-aria="rev.rating">★★★★★</span>
-          <strong class="rating-pill__value">4,8</strong>
-          <span class="rating-pill__count" data-i18n="rev.count">· prawie 300 opinii w Google</span>
+          <span class="rating-pill__stars" role="img" aria-label="Ocena 4,6 na 5 gwiazdek" data-i18n-aria="rev.rating">★★★★★</span>
+          <strong class="rating-pill__value">4,6</strong>
+          <span class="rating-pill__count" data-i18n="rev.count">· ponad 300 opinii w Google</span>
         </div>
       </div>
       <div class="reviews__grid">
@@ -248,6 +334,38 @@
             <div class="review__meta" data-i18n="rev3.meta">urlop w Niechorzu</div>
           </figcaption>
         </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="kicker" data-i18n="faq.kicker">dobrze wiedzieć</span>
+        <h2 class="section-title" data-i18n="faq.title">Częste pytania</h2>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q1">Czy trzeba rezerwować stolik?</span></summary>
+          <p class="faq__answer" data-i18n="faq.a1">Nie — działamy jak klasyczna nadmorska smażalnia: zamawiasz przy okienku i siadasz przy stoliku na tarasie. Przy większych grupach lub poza sezonem warto wcześniej zadzwonić: 601 366 921.</p>
+        </details>
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q2">Do której jesteście otwarci?</span></summary>
+          <p class="faq__answer" data-i18n="faq.a2">W sezonie letnim codziennie od 10:00 do 22:00. Poza sezonem godziny mogą się różnić — najlepiej zadzwoń przed przyjściem.</p>
+        </details>
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q3">Jakie ryby macie w karcie?</span></summary>
+          <p class="faq__answer" data-i18n="faq.a3">Zawsze świeże: dorsz, sandacz, halibut i miruna — smażone na bieżąco, w zestawach z frytkami i surówką. Do tego ryby zapiekane w sosach, owoce morza i domowe pierogi. Pełna karta dnia wisi na tablicy przy barze.</p>
+        </details>
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q4">Czy jest coś dla dzieci?</span></summary>
+          <p class="faq__answer" data-i18n="faq.a4">Tak — nuggetsy, stripsy z kurczaka i frytki znikają u najmłodszych najszybciej. Na miejscu jest też krzesełko do karmienia.</p>
+        </details>
+        <details class="faq__item">
+          <summary><span data-i18n="faq.q5">Jak was znaleźć?</span></summary>
+          <p class="faq__answer" data-i18n="faq.a5">Ul. Starowiejska 3A w Niechorzu — 10 metrów od wejścia na plażę i około 250 metrów od latarni morskiej. Szukaj zielonych parasoli i kolorowego szyldu IKA.</p>
+        </details>
       </div>
     </div>
   </section>

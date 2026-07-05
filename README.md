@@ -106,6 +106,10 @@ Wszystkie zdjęcia to autorskie fotografie Baru IKA — zoptymalizowane do forma
 
 Strona ma wbudowany przełącznik języka **PL | DE** (nawigacja). Polski jest językiem domyślnym i źródłem treści w HTML — strona działa w pełni także bez JavaScriptu (wtedy po polsku). Tłumaczenie niemieckie znajduje się w `assets/js/i18n.js`; wybór języka zapisywany jest w `localStorage`, a skrypt podmienia również `<html lang>`, `<title>`, meta description oraz teksty alternatywne i etykiety ARIA.
 
+## SEO
+
+Strona jest zoptymalizowana pod lokalne wyszukiwania („smażalnia ryb Niechorze", „gdzie zjeść w Niechorzu"): dane strukturalne schema.org (Restaurant z geolokalizacją i pełnym menu z cenami, FAQPage), sekcje treściowe „O nas" i „Częste pytania", sitemap z obrazami, spójne title/description. Ocena i liczba opinii na stronie odpowiadają wizytówce Google.
+
 ## Wykonanie
 
 Strona zaprojektowana i wykonana przez **CBprojekt sp. z o.o.** — developer **M4tr1x** (Mateusz Gumuła).
