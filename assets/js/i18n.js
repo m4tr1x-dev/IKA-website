@@ -58,6 +58,7 @@
     'g1.alt': 'Terrasse der Bar IKA mit Sonnenschirmen und Außenplätzen',
     'g2.alt': 'Fruchtiger Eisdrink, serviert in der Bar IKA',
     'g3.alt': 'Bar mit Auswahl an regionalen Bieren und Fassbier',
+    'g4.alt': 'Zweifarbiges, geschichtetes Bier, serviert in der Bar IKA',
     'rev.kicker': 'das sagen unsere Gäste',
     'rev.title': 'Einfach bombig!',
     'rev.rating': 'Bewertung: 4,6 von 5 Sternen',
